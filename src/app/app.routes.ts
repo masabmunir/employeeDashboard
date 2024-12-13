@@ -5,19 +5,21 @@ import { SalesComponent } from './sales/sales.component';
 
 export const routes: Routes = [
     {
-        path:'',
-        pathMatch:'full',
-        redirectTo:'home'
-    },
-    {
-        path:'',
-        component:LayoutComponent,
-        children:[
-            {path:'home',
-                component:HomeComponent
+        path: '',
+        component: LayoutComponent,
+        children: [
+            {
+                path: '',
+                redirectTo: 'home',
+                pathMatch: 'full'
             },
-            {path:'sales',
-                component:SalesComponent
+            {
+                path: 'home',
+                component: HomeComponent
+            },
+            {
+                path: 'sales',
+                component: SalesComponent
             }
         ]
     }
