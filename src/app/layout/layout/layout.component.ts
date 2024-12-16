@@ -4,7 +4,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { Menu } from '../menu.model';
 import { RouterOutlet } from '@angular/router';
 
-
 @Component({
   selector: 'app-layout',
   standalone: true,
@@ -17,7 +16,7 @@ export class LayoutComponent {
   opened = true;
 
   toggle(){
-
+    this.opened = !this.opened
   }
 
   menu: Menu = [{
