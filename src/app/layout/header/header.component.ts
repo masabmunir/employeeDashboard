@@ -1,5 +1,5 @@
 import { Component, Output } from '@angular/core';
-import { EventEmitter } from 'node:stream';
+import { EventEmitter } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
@@ -12,11 +12,9 @@ import { MatMenuModule } from '@angular/material/menu';
 })
 export class HeaderComponent {
 
-  // @Output() menuToggled = new EventEmitter<boolean>();
+  @Output() menuToggled = new EventEmitter<boolean>();
 
   user: string = 'Masab';
-
-  // constructor(private authService: AuthService) { }
 
   logout(): void {
     console.log('Logged out');
