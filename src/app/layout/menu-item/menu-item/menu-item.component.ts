@@ -17,4 +17,5 @@ import { CommonModule } from '@angular/common';
 export class MenuItemComponent {
 
   @Input() menu: Menu = [];
+
 }
