@@ -12,7 +12,7 @@ import { MatMenuModule } from '@angular/material/menu';
 })
 export class HeaderComponent {
 
-  @Output() menuToggled = new EventEmitter<boolean>();
+  @Output() menuToggled = new EventEmitter<void>();
 
   user: string = 'Masab';
 

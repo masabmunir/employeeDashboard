@@ -1,10 +1,11 @@
 <app-page-header icon="home">
   <h2>home</h2>
-  <button routerLink="/sales" mat-flat-button color="primary" class="action">
-
+  <button [routerLink]="['/sales']" routerLinkActive="router-link-active" mat-flat-button color="primary"
+    class="action">
     <mat-icon class="mr-2">add</mat-icon>
-    <span>New sale</span>
+    <span>New Sale</span>
   </button>
+
 
 </app-page-header>
 
